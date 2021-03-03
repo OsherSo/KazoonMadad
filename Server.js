@@ -7,7 +7,9 @@ const api = require('./Routes/api')
 const Base64 = require('./Functions/base64')
 const key = require('./Routes/key')
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/soccarDB' ,  { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://Kazoon:Tuar123789@cluster0.yjyzf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority' || 'mongodb://localhost/soccarDB' ,  { useNewUrlParser: true })
+
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/soccarDB' ,  { useNewUrlParser: true })
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
